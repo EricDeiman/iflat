@@ -1,0 +1,9 @@
+\#*
+*~
+\.\#*
+*.cmi
+*.cmo
+a.out
+_build
+*.native
+*.byte
