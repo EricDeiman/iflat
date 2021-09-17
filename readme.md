@@ -142,3 +142,6 @@ Entering only part of an expression with cause the REPL to prompt for the rest o
     ?? 
     ? 
 
+
+# Note
+This code is originally from early 2018.  I've only recently added it to my GitHub.
