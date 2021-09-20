@@ -1,7 +1,16 @@
 # toy lang
 
 This is a little system I put together to learn about Pratt parsers and implementing
-simple functional programming languages.
+simple functional programming languages.  I'm curious about Pratt parsers and setting up
+a table with the parsing rules rather than the traditional way of capturing the parsing 
+rules in recursive functions.  I think there's some potential in updating the parsing table
+at parse by the program being parsed.
+
+The source file `parse.ml` sets of several types used in the tables, and a number of
+helper functions to set up those types.  The funciton `parse` is the is what drives the
+parser using a table.  The table itself is not part of the parser code. Rather, it gets
+passed in as part of the `pc` parameter.  The parse table itself is in the file `toylang.ml`
+in the variable `pc`.
 
 ### the language
 
@@ -41,6 +50,8 @@ in the language are `->`, `||`, `&&`, `<=`, `>=`, `**`, `@@`, and `!=`. Other se
 punctuation characters will probably cause unusual errors.
 
 ### building and running
+
+Note: This repository only has the interesting parsing pieces and does not build.
 
 One can use `ocamlbuild` to create an executable, like so
 
