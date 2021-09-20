@@ -7,7 +7,7 @@ rules in recursive functions.  I think there's some potential in updating the pa
 at parse by the program being parsed.
 
 The source file `parse.ml` defines several types used in the tables, and a number of
-helper functions to create values those types.  The funciton `parse` drives the
+helper functions to create values of those types.  The funciton `parse` drives the
 parser using a table.  The table itself is not part of the parser code. Rather, it gets
 passed in as part of the `pc` parameter.  The parse table itself is in the file `toylang.ml`
 in the variable `pc`.

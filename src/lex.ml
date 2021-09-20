@@ -1,3 +1,22 @@
+(*
+    Copyright 2018 Eric J. Deiman
+
+    This file is part of the iflat project.
+
+    iflat is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    iflat is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with iflat.  If not, see <https://www.gnu.org/licenses/>.
+*)
+
 let source_string_stream str =
   let source = Scanf.Scanning.from_string str in
   Stream.from (fun i ->
