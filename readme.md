@@ -6,8 +6,8 @@ a table with the parsing rules rather than the traditional way of capturing the 
 rules in recursive functions.  I think there's some potential in updating the parsing table
 at parse by the program being parsed.
 
-The source file `parse.ml` sets of several types used in the tables, and a number of
-helper functions to set up those types.  The funciton `parse` is the is what drives the
+The source file `parse.ml` defines several types used in the tables, and a number of
+helper functions to create values those types.  The funciton `parse` drives the
 parser using a table.  The table itself is not part of the parser code. Rather, it gets
 passed in as part of the `pc` parameter.  The parse table itself is in the file `toylang.ml`
 in the variable `pc`.
